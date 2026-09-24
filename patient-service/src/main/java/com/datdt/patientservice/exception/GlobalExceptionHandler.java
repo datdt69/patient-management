@@ -1,6 +1,7 @@
 package com.datdt.patientservice.exception;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -29,6 +30,13 @@ public class GlobalExceptionHandler {
         errors.put("message","Email already exists.");
         return ResponseEntity.badRequest().body(errors);
 
+    }
+
+    public ResponseEntity<Map<String, String>> handlePatientNotFoundException(PatientNotFoundException ex){
+        log.warn("Patient not found {}", ex.getMessage());
+        Map<String, String> errors = new HashMap<>();
+        errors.put("message","Patient not found");
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errors);
     }
 
 

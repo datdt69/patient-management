@@ -18,7 +18,6 @@ public class PatientRequestDTO {
     @Email(message = "Email should be valid")
     private String email;
 
-
     @NotBlank(message = "Address is required")
     private String address;
 
