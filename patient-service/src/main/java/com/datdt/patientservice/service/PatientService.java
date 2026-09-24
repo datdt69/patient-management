@@ -23,6 +23,8 @@ public class PatientService {
 
     public PatientResponseDTO createPatient(PatientRequestDTO patientRequestDTO){
         Patient patient = patientRepository.save(PatientMapper.toModel(patientRequestDTO));
+        //check email unique
+        
         return PatientMapper.toDTO(patient);
     }
 
