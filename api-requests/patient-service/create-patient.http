@@ -7,7 +7,7 @@ Content-Type: application/json
   "email": "testmail@gmail.com",
   "address": "Somewhere in the world",
   "dateOfBirth": "2000-10-30",
-  "registerDate": "2026-09-24"
+  "registerDate": ""
 }
 
 ###
