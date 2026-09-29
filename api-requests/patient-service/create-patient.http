@@ -3,11 +3,11 @@ POST http://localhost:4000/patients
 Content-Type: application/json
 
 {
-  "name": "Dat Dang",
-  "email": "testmail@gmail.com",
+  "name": "Datsdf Dang",
+  "email": "testmai123456l@gfdfasfmail.com",
   "address": "Somewhere in the world",
   "dateOfBirth": "2000-10-30",
-  "registerDate": ""
+  "registerDate": "2000-10-30"
 }
 
 ###

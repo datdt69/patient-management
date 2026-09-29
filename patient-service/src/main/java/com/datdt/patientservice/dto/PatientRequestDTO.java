@@ -25,7 +25,7 @@ public class PatientRequestDTO {
     @NotNull(message = "Register date is required")
     private String dateOfBirth;
 
-    @NotBlank(groups = CreatePatientValidationGroup.class, message = "Date of birth is required")
+    @NotBlank(groups = CreatePatientValidationGroup.class, message = "Register date is required")
     private String registerDate;
 
 
